@@ -9,13 +9,13 @@ public class TrafficLightSimulator {
 
         switch (state) {
             case 1:
-                System.out.println("Red Light → STOP");
+                System.out.println("Red Light : STOP");
                 break;
             case 2:
-                System.out.println("Yellow Light → SLOW DOWN");
+                System.out.println("Yellow Light : SLOW DOWN");
                 break;
             case 3:
-                System.out.println("Green Light → GO");
+                System.out.println("Green Light : GO");
                 break;
             default:
                 System.out.println("Invalid input! Please enter 1, 2, or 3.");
