@@ -1,12 +1,12 @@
-public class Factorial {
-    // Using recursion
+import java.util.Scanner;
+public class Factorial {    // Using recursion
     public static void main(String[] args) {
-        int number = 5; // Example number
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
         long factorial = factorial(number);
         System.out.println("Factorial of " + number + " is: " + factorial);
+        scanner.close();
     }
-
-    // Recursive method to calculate factorial
     public static long factorial(int n) {
         if (n == 0) {
             return 1;
