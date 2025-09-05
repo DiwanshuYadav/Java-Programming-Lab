@@ -1,6 +1,8 @@
+import java.util.Scanner;
 public class Fibonnaci {
     public static void main(String[] args) {
-        int n = 10; // Number of terms
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
         int[] fib = new int[n];
         
         // Initialize the first two terms
@@ -17,5 +19,6 @@ public class Fibonnaci {
         for (int i = 0; i < n; i++) {
             System.out.print(fib[i] + " ");
         }
+        scanner.close();
     }
 }
